@@ -1,33 +1,27 @@
-        function add() {
-            var value1 = parseInt(document.getElementById("value1").value);
-            var value2 = parseInt(document.getElementById("value2").value);
+function area() {
+    var length = parseInt(document.getElementById("length").value);
+    var width = parseInt(document.getElementById("width").value);
 
-            var result = value1 + value2;
+    var result = length * width;
 
-            document.getElementById("result").innerHTML = result;
-        }
+    document.getElementById("result").innerHTML = result;
+  }
 
-        function subtract() {
-            var value1 = parseInt(document.getElementById("value1").value);
-            var value2 = parseInt(document.getElementById("value2").value);
+  function pythag() {
+      var a = parseInt(document.getElementById("a").value);
+      var b = parseInt(document.getElementById("b").value);
 
-            var result = value1 - value2;
+      var result = (a*a) * (b*b);
 
-            document.getElementById("result").innerHTML = result;
-        }
-        function multiply() {
-            var value1 = parseInt(document.getElementById("value1").value);
-            var value2 = parseInt(document.getElementById("value2").value);
+      document.getElementById("result1").innerHTML = result;
+    }
 
-            var result = value1 * value2;
+    function volume() {
+        var l = parseInt(document.getElementById("length").value);
+        var w = parseInt(document.getElementById("width").value);
+        var h = parseInt(document.getElementById("height").value);
 
-            document.getElementById("result").innerHTML = result;
-        }
-        function divide() {
-            var value1 = parseInt(document.getElementById("value1").value);
-            var value2 = parseInt(document.getElementById("value2").value);
+        var result = length * width * height
 
-            var result = value1 / value2;
-
-            document.getElementById("result").innerHTML = result;
-        }
+        document.getElementById("result2").innerHTML = result;
+      }

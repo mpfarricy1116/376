@@ -7,26 +7,37 @@
     </head>
 
     <body>
-
-        <h1>JavaScript Lesson 3</h1>
-
-        <p>
-            The focus of this lesson is <b>functions</b>. We will use this calculator example to
-            explore how functions work, use parameters, return values, and call other functions.
-        </p>
-
         <form>
-            Value 1: <input type="text" id="value1" name="value1" />
+          <h1> Area </h1>
+            length: <input type="text" id="length" name="length" />
             <br />
-            Value 2: <input type="text" id="value2" name="value2" />
+            width: <input type="text" id="width" name="width" />
             <br />
+            <button type="button" onclick="area()">=</button>
 
-            <button type="button" onclick="add()">+</button>
-            <button type="button" onclick="subtract()">-</button>
-            <button type="button" onclick="multiply()">*</button>
-            <button type="button" onclick="divide()">/</button>
         </form>
-
         Result: <span id="result"></span>
+        <form>
+          <h2> Pythagorean Theorem </h2>
+            a: <input type="text" id="a" name="a" />
+            <br />
+            b: <input type="text" id="b" name="b" />
+            <br />
+            <button type="button" onclick="pythag()">=</button>
+
+        </form>
+        Result: <span id="result1"></span>
+        <form>
+          <h3> Volume Rectangular Prism </h3>
+          length  : <input type="text" id="length" name="length" />
+            <br />
+          width   : <input type="text" id="width" name="width" />
+            <br />
+          height  : <input type="text" id="height" name="height" />
+            <br />
+            <button type="button" onclick="volume()">=</button>
+
+        </form>
+        Result: <span id="result2"></span>
     </body>
 </html>
